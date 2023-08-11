@@ -1,0 +1,382 @@
+/* Home Page Gridding */
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Adjust this value as needed for spacing between columns */
+}
+
+.grid-item {
+  border: 1px solid #ccc; /* Add styling as needed */
+  padding: 20px; /* Add padding as needed */
+}
+
+
+/* NAVBAR Designing */
+/* Add these styles to your CSS */
+.nav-brand {
+  font-size: 1.5rem; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #ffffff; /* Your desired brand color */
+  text-decoration: none;
+  margin-right: auto; /* Pushes other links to the right */
+  padding: 10px 20px; /* Add some padding to the brand/logo */
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  /* Adjust NavMenu for mobile */
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    top: 85px; /* Height of your navbar */
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-menu.active {
+    transform: translateX(0);
+  }
+}
+
+
+
+/* PEOPLE Component Design */
+
+.character-container {
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .character-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 columns in desktop view */
+    grid-gap: 20px;
+    margin-top: 20px;
+    justify-items: center; /* Center items horizontally in the grid */
+    align-items: center; /* Center items vertically in the grid */
+  }
+  
+  .character-box {
+    background-color: #cce0ff;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 15px; /* Increase padding for more space inside the box */
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    height: 150px; /* Increase the height */
+    width: 200px; /* Increase the width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000; 
+    border-radius: 10px; 
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .character-box:hover {
+    background-color: #99c2ff;
+    transform: scale(1.05);
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 768px) {
+    .character-grid {
+      grid-template-columns: 1fr; /* 1 column in mobile view */
+    }
+  }
+  
+
+  /* STARSHIP Component Design */
+  .starship-container {
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .starship-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 columns in desktop view */
+    grid-gap: 20px;
+    margin-top: 20px;
+    justify-items: center; /* Center items horizontally in the grid */
+    align-items: center; /* Center items vertically in the grid */
+  }
+  
+  .starship-box {
+    background-color: #cce0ff;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 15px; /* Increase padding for more space inside the box */
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    height: 150px; /* Increase the height */
+    width: 200px; /* Increase the width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000; 
+    border-radius: 10px; 
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .starship-box:hover {
+    background-color: #99c2ff;
+    transform: scale(1.05);
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 768px) {
+    .starship-grid {
+      grid-template-columns: 1fr; /* 1 column in mobile view */
+    }
+  }
+  /* styles.css */
+
+/* Pagination Container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Individual Pagination Pages */
+.pagination-page {
+  display: inline-block;
+  padding: 8px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+/* Active Pagination Page */
+.pagination-active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Previous and Next Buttons */
+.pagination-container .previous,
+.pagination-container .next {
+  padding: 8px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  border: 1px solid #ccc;
+}
+
+/* Previous and Next Buttons on Hover */
+.pagination-container .previous:hover,
+.pagination-container .next:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+  /* PLANETS Component Design */
+  .planet-container {
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .planet-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 columns in desktop view */
+    grid-gap: 20px;
+    margin-top: 20px;
+    justify-items: center; /* Center items horizontally in the grid */
+    align-items: center; /* Center items vertically in the grid */
+  }
+  
+  .planet-box {
+    background-color: #cce0ff;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 15px; /* Increase padding for more space inside the box */
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    height: 150px; /* Increase the height */
+    width: 200px; /* Increase the width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000; 
+    border-radius: 10px; 
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .planet-box:hover {
+    background-color: #99c2ff;
+    transform: scale(1.05);
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 768px) {
+    .planet-grid {
+      grid-template-columns: 1fr; /* 1 column in mobile view */
+    }
+  }
+  
+
+  /* VEHICLE Component Design */
+  .vehicle-container {
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 columns in desktop view */
+    grid-gap: 20px;
+    margin-top: 20px;
+    justify-items: center; /* Center items horizontally in the grid */
+    align-items: center; /* Center items vertically in the grid */
+  }
+  
+  .vehicle-box {
+    background-color: #cce0ff;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 15px; /* Increase padding for more space inside the box */
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    height: 150px; /* Increase the height */
+    width: 200px; /* Increase the width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000; 
+    border-radius: 10px; 
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .vehicle-box:hover {
+    background-color: #99c2ff;
+    transform: scale(1.05);
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 768px) {
+    .vehicle-grid {
+      grid-template-columns: 1fr; /* 1 column in mobile view */
+    }
+  }
+
+  /* MODAL Styling */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darken the background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure the modal is on top of other content */
+  }
+  
+  .modal {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    border-radius: 10px;
+    padding: 40px; /* Increase padding for larger modal */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Increased shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .modal h2 {
+    margin-bottom: 20px;
+    font-size: 24px; /* Increase font size */
+    font-weight: bold;
+  }
+  
+  .typing-animation {
+    animation: typing 2s steps(10, end);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    width: 0;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .modal p {
+    margin: 10px 0;
+  }
+  
+  .modal button {
+    background-color: #cce0ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  /* BAR CHART STYLING */
+  /* Add these styles to your CSS file */
+
+.chart-container {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.chart-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.chart {
+  height: 400px; /* Adjust the height as needed */
+}
+
+  
